@@ -1,0 +1,28 @@
+GET http://localhost:3000/sub
+
+###
+
+GET http://localhost:3000/sub/5f995161fe8fba51021dfe17
+
+###
+
+POST http://localhost:3000/sub
+Content-Type: application/json
+
+{
+    "name": "userpq",
+    "subscribedToChannel" : "TestChannel"
+}
+
+###
+
+DELETE http://localhost:3000/sub/5f995d705c486c24eaa92890
+
+###
+
+PATCH http://localhost:3000/sub/5f99710f510c440fc39e2b1e 
+Content-Type: application/json
+
+{
+    "name": "new3"
+}
